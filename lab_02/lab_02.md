@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 02
 
 Lab 2 asks us to run a series of command in a Linux terminal. For each command a
 short description of what it does will be given, and a copy of the output will
