@@ -1,0 +1,28 @@
+default:
+	just --list
+
+new:
+	python src/julian.py
+	python src/date_example.py
+	python src/datetime_example.py
+	python src/sun.py 'New York'
+	python src/moon.py
+	python src/coordinates.py 'SC Williams Library'
+	python src/address.py '40.74480675, -74.02532862031404'
+	python src/battery.py
+	python src/documentstats.py document.txt
+	python src/cpu.py
+	python src/time_example.py
+
+original:
+	python src/original/julian.py
+	python src/original/date_example.py
+	python src/original/datetime_example.py
+	python src/original/sun.py 'New York'
+	python src/original/moon.py
+	python src/original/coordinates.py 'SC Williams Library'
+	python src/original/address.py '40.74480675, -74.02532862031404'
+	python src/original/battery.py
+	python src/original/documentstats.py document.txt
+	python src/original/cpu.py
+	python src/original/time_example.py

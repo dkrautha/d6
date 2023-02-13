@@ -1,0 +1,25 @@
+[tool.pdm]
+
+[project]
+name = "lab_03"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "David Krauthamer", email = "dkrautha@pm.me"},
+]
+dependencies = [
+    "jdcal>=1.4.1",
+    "astral>=3.2",
+    "geopy>=2.3.0",
+    "psutil>=5.9.4",
+]
+requires-python = ">=3.10"
+license = {text = "GPL-3.0+"}
+
+[tool.pyright]
+extraPaths = ["__pypackages__/3.10/lib/"]
+
+[tool.pdm.scripts]
+
+[tool.ruff]
+select = ["E", "F", "I"]
