@@ -8,10 +8,12 @@ scripts and install some third party packages.
 Just about every modern desktop or server Linux installation that I know of
 comes with a version of Python pre-installed, which in my case was 3.10.9.
 
-I also installed a program called [PDM](https://pdm.fming.dev/2.4/) for managing
-the third party package installations. I generally try and avoid installing
-python packages globally, unless they're available in my system's package
-manager.
+I also installed a program called
+[micromamba](https://mamba.readthedocs.io/en/latest/index.html), which is an
+alternative to the [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+package manager for Python. Micromamba allows me to create sandboxed
+environments to install python packages in, as I generally try and avoid
+installing python packages globally.
 
 If by some miracle somebody is reading this... **please do not** install
 packages from `pip` by doing something like `sudo pip install <package>`. The
@@ -29,13 +31,14 @@ you a copy of the Python interpreter and pip in folder, and allow you to install
 packages that can only be accessed by that environment. Virtual environments are
 battle tested and have been used for years, and are fairly simple to get setup.
 
-My chosen solution is to use a [PEP 582](https://peps.python.org/pep-0582/)
-compliant package manager (like PDM mentioned earlier). This avoids needing to
-use a virtual environment and activating it, etc. and lets me just use the
-system python interpreter while still sandboxing the packages installed.
+My chosen solution is to use micromamba, a package and environment manager. If
+you've got micromamba installed, creating an environment for this lab is as easy
+as `micromamba create -f ./env.yaml`, then activate it with
+`micromamba activate lab_03`.
 
 A final recommendation would be to use [pipx](https://pypi.org/project/pipx/) if
-you are using a program instead of a library.
+you are using a program (that gets invoked in the terminal for example) instead
+of a library.
 
 ## Changes I Made
 
@@ -79,6 +82,25 @@ changes I made to many of the scripts:
   of choice, where you can catch lots of bugs due to mismatched types. Once you
   start working with larger codebases having some amount of static typing is
   essential.
+
+## Other Things I've Done
+
+- Adding a pyproject.toml
+
+  [PEP 621](https://peps.python.org/pep-0621/) introduced the concept of a
+  project.toml file, where all of a projects core metadata is stored for
+  packaging related tools to consume, as well as other tools to have
+  configuration. I've put some basic info in there, as well as configuration for
+  [ruff](https://github.com/charliermarsh/ruff), my linter of choice.
+
+- Adding a justfile
+
+  One problem I've had for years was the need of a cross-platform script runner.
+  Makefiles aren't really a great choice due to their terrible errors and
+  general jank factor. In comes [just](https://github.com/casey/just), which is
+  nothing but a command runner. You don't need it at all to run things in this
+  repo, but it'll give you an idea of what commands I'm using most often / think
+  are important.
 
 ## Running the Original Files
 

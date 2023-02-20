@@ -26,3 +26,6 @@ original:
 	python src/original/documentstats.py document.txt
 	python src/original/cpu.py
 	python src/original/time_example.py
+
+micromamba_create:
+  micromamba create -f ./env.yaml
