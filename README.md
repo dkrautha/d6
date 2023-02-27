@@ -6,6 +6,8 @@
 
 ## [Lab 03: Python Basics](/lab_03/lab_03.md)
 
+## [Lab 04: Django and Flask](/lab_04/lab_04.md)
+
 ## LICENSE
 
 Files in this repository are licensed under the GPLv3 or later. The exception to
