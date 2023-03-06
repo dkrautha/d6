@@ -1,6 +1,7 @@
 # Lab 06
 
-Lab 6 asks us to install nodejs and run a few files.
+Lab 6 asks us to install NodeJS and run a few files. It also asks us to install
+pystache and run another Python file.
 
 ## http.js
 
@@ -19,3 +20,7 @@ Lab 6 asks us to install nodejs and run a few files.
 ![site output](./hello_world.png)
 
 ![hello-world.js](./hello_world_js.png)
+
+## say_hello.py
+
+![say hello](./say_hello.png)
