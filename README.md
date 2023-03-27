@@ -8,6 +8,10 @@
 
 ## [Lab 04: Django and Flask](/lab_04/lab_04.md)
 
+## [Lab 05: Django and Flask](/lab_05/lab_05.md)
+
+## [Lab 06: Node.js and Pystache](/lab_06/lab_06.md)
+
 ## LICENSE
 
 Files in this repository are licensed under the GPLv3 or later. The exception to
