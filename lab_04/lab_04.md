@@ -98,35 +98,35 @@ I don't want to give google my credit card.
 
 ![Location](./creating_stevens_entry.png) ![Dt List](./dt_list.png)
 ![CPU List](./cpu_list.png) ![Mem List](./mem_list.png)
-![Home Page Error](./home_page_error.png)
+
+#### Final Site CPU
+
+![Final site](./cpu_site.png)
 
 ### Django Final Verdict
 
-I was able to successfully complete the first Django project (except for the
-giving google my card information part). The second project not so much. I
-believe I followed everything correctly, and everything seemed to work up until
-actually trying to go the site homepage where I got the error shown in the final
-image of the [Django Setup](#django-setup) section. I don't have hours to go
-debugging to figure out what is wrong, especially when effectively none of the
-code is mine, and I don't know what it is doing.
+I was able to complete both Django projects (except for the giving google my
+credit card information part).
 
-Did I actually learn anything from doing this? No not really, Django is wildly
-complicated. It seems like the content of this lab should be multiple weeks, so
-we can actually understand what is going on. Given more time we could've learned
-about how stuff works on the web (different request types), what Django's job
-actually is, and how to build up to something like the project presented here.
+Did I actually learn anything from doing this? Not really? Django is wildly
+complicated compared to other Python web servers I've seen. It seems like the
+best way to get something out of this lab would be for it to be multiple weeks,
+so we can actually understand what is going on. Given more time we could've
+learned about how stuff works on the web (different request types), what
+Django's job actually is, and how to build up to something like the project
+presented here.
 
 Would I ever use Django again if given the choice? Hell no. I worked with
 [FastAPI](https://fastapi.tiangolo.com/) during one of my co-ops, and I would
 pick it in a heartbeat again over ever touching Django with a ten-foot pole.
 
-Additionally, seeing as we're likely to keep using Python, far more time needs
+Additionally, if we're likely to keep using Python in our labs, more time needs
 to be dedicated to explaining what it is, how to install it, and how to do basic
-things with it if we're going to be expected to use it. I've used Python for
-years and used it in both of my co-ops. But just about every student in this
-class has only had two classes involving programming before E115/116, which is
-utterly useless, and CPE390, which focuses on very low level topics of computing
-and confuses many students due to it being their first introduction to C++.
+things with it. I've used Python for years and used it in both of my co-ops. But
+just about every student in this class has only had two classes involving
+programming before. E115/116, which is utterly useless, and CPE390, which
+focuses on very low level topics of computing and confuses many students due to
+it being their first introduction to C++.
 
 ## Flask
 
