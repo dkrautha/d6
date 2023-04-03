@@ -12,6 +12,10 @@
 
 ## [Lab 06: Node.js and Pystache](/lab_06/lab_06.md)
 
+## [Lab 07: ThinkSpeak and Google Sheets](/lab_07/lab_07.md)
+
+## [Lab 08: Data Analysis](/lab_08/lab_08.md)
+
 ## LICENSE
 
 Files in this repository are licensed under the GPLv3 or later. The exception to
