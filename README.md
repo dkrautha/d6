@@ -16,6 +16,10 @@
 
 ## [Lab 08: Data Analysis](/lab_08/lab_08.md)
 
+## [Lab 09: PlantUML](/lab_09/lab_09.md)
+
+## [Lab 10: Blockchain](/lab_10/lab_10.md)
+
 ## LICENSE
 
 Files in this repository are licensed under the GPLv3 or later. The exception to
