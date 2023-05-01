@@ -107,3 +107,63 @@
 ![titanic_2](./titanic_2.png)
 
 ## 8B: Data Analysis
+
+### My Plots From My Data
+
+![timeseries_early.png](./timeseries_early.png)
+
+![timeseries_late.png](./timeseries_late.png)
+
+![histogram_of_cpu_usage.png](./histogram_of_cpu_usage.png)
+
+![histogram_of_temperature.png](./histogram_of_temperature.png)
+
+![boxplot_of_cpu_usage.png](./boxplot_of_cpu_usage.png)
+
+![boxplot_of_temperature.png](./boxplot_of_temperature.png)
+
+![scatter_of_cpu_usage.png](./scatter_of_cpu_usage.png)
+
+![stats_predictions](./stats_predictions.png)
+
+### What I Changed From Provided Code
+
+#### plt_cv2.py
+
+##### Pandas Glob Import to pd
+
+```python
+# Old
+from pandas import *
+# New
+import pandas as pd
+pd.read_csv("my_nonexistant_file.csv")
+```
+
+Glob imports like this are usually not a good idea, as they load in everything
+in the module at once and put it into the global namespace, which increases the
+probablity of name conflicts with other functions / classes, etc.
+
+##### Used plt.savefig() to save the plot
+
+```python
+import matplotlib.pyplot as plt
+# Do your plot stuff before this line 
+plt.savefig("my_nonexistant_file.png")
+```
+
+#### plt_final.py
+
+##### Time Series Split
+
+I first converted the date / time column from a string (I'm pretty sure that's
+what it was) to a datetime object (see line 8).
+
+Next I had two distinct sets of data, one from about 2pm and the other from
+about 6pm. Graphing them together produces a really ugly graph that with a giant
+gap in the middle. I instead made two separate plots and sliced up to the split
+for one and after the split for the other. See lines 12-68 for that process.
+
+##### Used plt.savefig() to save the plot
+
+Just like the previous file, I also used savefig() to save the plot.
